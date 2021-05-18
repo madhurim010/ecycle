@@ -185,6 +185,9 @@ img {vertical-align: middle;}*/
    .prev, .next {
     height: 55vw;
   }
+  .text{
+    height: 55vw;
+  }
 }
 
 @media only screen and (max-width: 475px) {
@@ -203,6 +206,7 @@ img {vertical-align: middle;}*/
   }
   .text{
     width: 100%;
+    height: 100vw;
   }
 }
 

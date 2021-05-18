@@ -62,16 +62,18 @@ img {vertical-align: middle;}*/
     position: absolute;
     
     margin-top: 5em;
-    width: 50%;
+    width: 60%;
 }
 .mySlides .over{
-  width: 50%;
+  width: 100%;
   height: 40vw;
   position: absolute;
   right: 0px;
 }
 .transition-right{
-  width: 100%;
+  width: 40%;
+  position: absolute;
+  right:0px;
   animation: slide ease-out 0.4s 1;
   animation-fill-mode: forwards ;
 }
@@ -83,7 +85,7 @@ img {vertical-align: middle;}*/
     transform: translateX(-50%);
   }
   to{
-    width: 100%;
+    width: 40%;
     transform: translateX(0px);
   }
 }

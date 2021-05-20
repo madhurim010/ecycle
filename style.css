@@ -304,9 +304,37 @@ img {vertical-align: middle;}*/
   .text{
     width: 100%;
     height: 100vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
   }
   .prev:hover, .next:hover {
     background-color: transparent;
+  }
+  #slideshow-text-1{
+    font-size: 10vw;
+    margin-bottom: 8vw;
+  }
+  #slideshow-text-2{
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 8vw;
+  }
+  
+  #slideshow-text-3{
+    font-size: 10vw;
+    margin-bottom: 8vw;
+  }
+  #slideshow-text-4{
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 8vw;
+  }
+  .button{
+    flex-direction: column;
+    justify-content:flex-start ;
+  }
+  .btn{
+    width: 50%;
   }
 }
 

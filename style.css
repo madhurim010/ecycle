@@ -153,21 +153,28 @@ img {vertical-align: middle;}*/
   font-weight : 400;
   margin-top:0 ;
   margin-bottom: 4vw;
+  overflow: hidden;
+  animation: emerge 0.75s ease-out  1 forwards;
+  
 }
+
 #slideshow-text-2{
   margin-top: 0;
   margin-bottom: 4vw;
+  animation: emerge 0.75s ease-out  1 forwards;
 }
 
 #slideshow-text-3{
   font-size:5vw;
   font-weight : 400;
   margin-top: 0;
-  margin-bottom: 4vw;
+  animation: emerge 0.75s ease-out  1 forwards;
+ 
 }
 #slideshow-text-4{
   margin-top: 0;
   margin-bottom: 4vw;
+  animation: emerge 0.75s ease-out  1 forwards;
 }
 .button{
   display: flex;
@@ -175,9 +182,30 @@ img {vertical-align: middle;}*/
   justify-content: flex-start;
   margin-top: 0;
 }
+@keyframes emerge {
+  from{
+    clip-path: inset(0 0 100% 0);
+  }
+  to{
+    clip-path: inset(0 0 0 0);
+  }
+}
 .btn{
   margin: 2vw;
   margin-top: 0;
+  border-radius: 0.35rem;
+  font-size: 2vw;
+  animation: emerge-bottom 0.75s ease-out  1 forwards;
+}
+@keyframes emerge-bottom {
+  from{
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 /* Number text (1/3 etc) */
 .numbertext {
@@ -245,6 +273,7 @@ img {vertical-align: middle;}*/
   .btn{
     margin: 2vw;
     margin-top: 0;
+    font-size: 2.5vw;
   }
 }
 
@@ -335,6 +364,7 @@ img {vertical-align: middle;}*/
   }
   .btn{
     width: 50%;
+    font-size: 3.5vw;
   }
 }
 

@@ -3,42 +3,44 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css" >
+<script src="javascript.js"></script>
 <body>
 <div class="container">
   <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="transition-left">
+    <div class="slideshow fade">
+      <div class="slideshow-background">
         <img class="under" src="images/eCycle5.jpg">
       </div>
-      <div class="transition-right">
+      <div class="slideshow-main">
         <img class="over" src="images/eCycle1.jpg" >
       </div>
-      <div class="text">
+      <div class="slideshow-text">
         <p id="slideshow-text-1">Lorem ipsum dolor sit amet</p>
         <p id="slideshow-text-2">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="button">
-          <button class="btn btn-1">Book A Ride</button>
-          <button class="btn btn-2">Sign In</button>
+        <div class="slideshow-button">
+          <button class="slideshow-btn btn-1">Book A Ride</button>
+          <button class="slideshow-btn btn-2">Sign In</button>
         </div>
       </div>
     </div>
 
-    <div class="mySlides fade">
-      <div class="transition-left">
+    <div class="slideshow fade">
+      <div class="slideshow-background">
         <img class="under" src="images/eCycle5.jpg">
       </div>
-      <div class="transition-right">
+      <div class="slideshow-main">
         <img class="over" src="images/eCycle6.jpg" >
       </div>
-      <div class="text">
-        <p id="slideshow-text-3">
-          Ut enim ad minim veniam,</p>
-          <p id="slideshow-text-4">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      <div class="slideshow-text">
+        <div>
+        <p id="slideshow-text-1">
+          Ut enim ad minim veniam,</p></div>
+          <p id="slideshow-text-2">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit 
          </p>
-          <div class="button">
-            <button class="btn btn-1">Book A Ride</button>
-            <button class="btn btn-2">Sign In</button>
+          <div class="slideshow-button">
+            <button class="slideshow-btn btn-1">Book A Ride</button>
+            <button class="slideshow-btn btn-2">Sign In</button>
           </div>
       </div>
     </div>
@@ -51,54 +53,12 @@
   </div>
   
 </div>
-
-
-
 <br>
-
-
 <script>
-var slideIndex = 0;
+  var slideIndex = 0;
 ShowSlides();
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[slideIndex-1].style.display = "block";  
-  
-}
-function ShowSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  
-  slides[slideIndex-1].style.display = "block";  
-  
-  setTimeout(ShowSlides, 10000); // Change image every 2 seconds
-}
-</script>
 </script>
 
 </body>
